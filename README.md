@@ -61,3 +61,6 @@ La structure des données et leurs relations sont représentées ci-dessous :
 
 ![Data Model](./assets/data_model.png)
 
+SQL schema ![Data Model](./assets/data_model.png)
+
+
