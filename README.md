@@ -54,3 +54,10 @@ Cette approche permet d’identifier les zones potentiellement sous-desservies, 
 L’ensemble du traitement et de la visualisation a été réalisé avec Python et les bibliothèques GeoPandas, Shapely et Folium pour la cartographie interactive.
 Les insights et recommandations sont disponibles dans le dossier /insights
 .
+
+## 🗺️ Data Structure
+
+La structure des données et leurs relations sont représentées ci-dessous :
+
+![Data Model](./assets/data_model.png)
+
