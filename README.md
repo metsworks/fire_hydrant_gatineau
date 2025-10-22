@@ -31,3 +31,23 @@ L’objectif est double :
 Les principaux insights et recommandations issus de l’analyse sont documentés dans le dossier /insights
  du repository.
 On y retrouve une synthèse claire des résultats, des pistes d’amélioration et des suggestions pour une meilleure planification territoriale.
+
+
+🌍 ##Overview
+
+Ce projet se concentre sur l’analyse géospatiale des bornes d’incendie à Gatineau, en relation directe avec les adresses d’immeubles résidentiels.
+L’objectif principal est d’évaluer la proximité réelle entre chaque bâtiment et la borne d’incendie la plus proche, afin de mesurer la qualité de couverture du réseau de bornes à travers la ville.
+
+Les distances ont été catégorisées en trois niveaux :
+
+🟢 Bonne couverture : moins de 50 mètres
+
+🟡 Couverture moyenne : entre 50 et 100 mètres
+
+🔴 Faible couverture : au-delà de 100 mètres
+
+Cette approche permet d’identifier les zones potentiellement sous-desservies, notamment dans les quartiers résidentiels en expansion, et d’apporter des informations utiles aux services d’urgence (pompiers, police, hôpitaux) ainsi qu’à la planification urbaine.
+
+L’ensemble du traitement et de la visualisation a été réalisé avec Python et les bibliothèques GeoPandas, Shapely et Folium pour la cartographie interactive.
+Les insights et recommandations sont disponibles dans le dossier /insights
+.
