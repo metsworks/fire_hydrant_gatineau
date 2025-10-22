@@ -18,17 +18,15 @@ Les services d’urgence les plus proches — pompiers, police, hôpitaux — pe
 Pour y répondre, j’ai conçu un projet d’analyse géospatiale basé sur les données ouvertes de la Ville de Gatineau.
 Ce travail vise à cartographier et mesurer la couverture des bornes d’incendie en relation avec :
 
-les immeubles résidentiels et lieux publics,
+les immeubles résidentiels 
+la distance réelle aux services d’urgence,
 
-la distance moyenne aux services d’urgence,
-
-et la densité des infrastructures critiques.
 
 L’objectif est double :
 
-Identifier les zones vulnérables, où le maillage de bornes ou la proximité des secours pourrait être optimisé ;
+- Identifier les immeubles vulnérables, où le maillage de bornes ou la proximité des secours pourrait être optimisé 
 
-Montrer comment les données ouvertes et l’intelligence géospatiale peuvent servir la sécurité urbaine, soutenir les décisions publiques et renforcer la prévention citoyenne.
+- Montrer comment les données ouvertes et l’intelligence géospatiale peuvent servir la sécurité urbaine, soutenir les décisions publiques et renforcer la prévention citoyenne.
 
 Les principaux insights et recommandations issus de l’analyse sont documentés dans le dossier /insights
  du repository.
