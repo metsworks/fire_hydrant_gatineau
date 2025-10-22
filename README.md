@@ -33,7 +33,7 @@ Les principaux insights et recommandations issus de l’analyse sont documentés
 On y retrouve une synthèse claire des résultats, des pistes d’amélioration et des suggestions pour une meilleure planification territoriale.
 
 
-🌍 ##Overview
+## 🌍 Overview
 
 Ce projet se concentre sur l’analyse géospatiale des bornes d’incendie à Gatineau, en relation directe avec les adresses d’immeubles résidentiels.
 L’objectif principal est d’évaluer la proximité réelle entre chaque bâtiment et la borne d’incendie la plus proche, afin de mesurer la qualité de couverture du réseau de bornes à travers la ville.
