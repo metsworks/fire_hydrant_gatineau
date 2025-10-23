@@ -64,3 +64,11 @@ La structure des données et leurs relations sont représentées ci-dessous :
 SQL schema ![Data Model](./assets/data_model.png)
 
 
+## Summary
+📊 Overview of Findings
+
+L’analyse géospatiale des bornes d’incendie à Gatineau révèle que 65.27 % des immeubles résidentiels bénéficient d’une bonne couverture, contre 30.87 % à couverture moyenne, 1.35 % à couverture faible, et 2.52 % sans borne à proximité. Le secteur de Hull se distingue par la meilleure performance (71.74 % d’adresses bien couvertes) et seulement 0.20 % à faible couverture, tandis que Masson-Angers et Aylmer affichent respectivement 64.76 % et 62.74 %. En moyenne, les immeubles bien couverts se trouvent à 32.26 m d’une borne, contre 62.14 m pour ceux en couverture moyenne. Ces résultats soulignent une bonne performance globale, mais mettent en évidence des zones ciblées d’amélioration pour atteindre une couverture quasi complète sur l’ensemble du territoire.
+
+https://lookerstudio.google.com/reporting/761f92ad-2a7b-40ce-bcb8-b43b9fccbbba
+
+
