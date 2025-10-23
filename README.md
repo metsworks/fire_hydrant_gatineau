@@ -15,9 +15,7 @@ Les immeubles bien couverts se situent en moyenne à 32.26 m d’une borne, cont
 Cet été, un incendie particulièrement ravageur s’est déclaré à la limite de Masson-Angers, emportant 3 maisons.
 Cet événement m'a fait réfléchir et a soulevé une question essentielle : La répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
 
-Je me suis penché sur les données ouverte de la ville et entamer un projet d'analyse qui:
-Vise à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
-
+Je me suis penché sur les données ouvertes de la Ville de Gatineau et j’ai entrepris un projet d’analyse visant à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
 Mesurer la proximité réelle entre bâtiments et bornes,
 
 Identifier les zones sous-desservies,
