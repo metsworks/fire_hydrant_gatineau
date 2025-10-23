@@ -75,12 +75,8 @@ Ce schéma illustre la structure logique du modèle et le flux de données utili
 
 📊 Executive Summary
 
-Thème	Insight / Valeur clé	Business Metric / Impact	Storytelling / Interprétation
-🏠 Couverture globale	65.27 % des immeubles bien couverts, 30.87 % moyenne, 1.35 % faible, 2.52 % sans borne	Montre une couverture satisfaisante, mais des poches à risque persistent	La majorité des bâtiments de Gatineau ont accès à une borne, mais certaines zones restent vulnérables aux délais d’intervention.
-🧭 Performance par secteur	Hull : 71.74 %, Aylmer : 62.74 %, Masson-Angers : 64.76 %	Hull présente la meilleure répartition spatiale	Les infrastructures urbaines de Hull offrent la meilleure accessibilité incendie de la ville.
-📏 Proximité moyenne	Bonne couverture : 32.26 m — Moyenne : 62.14 m	Corrélation forte entre distance et niveau de risque	Plus la borne est proche, plus la capacité d’intervention est rapide et efficace.
-🚒 Services d’urgence	Immeubles de Masson-Angers à 5.35 km d’une caserne, 5.31 km d’un poste de police, 7.04 km d’un hôpital	Permet d’évaluer la rapidité potentielle de réponse en cas d’incident	Les distances moyennes aux services critiques restent stables mais optimisables dans certains sous-secteurs.
-⚙️ Recommandation clé	Cibler les 40 adresses à faible couverture identifiées à Hull	Amélioration de la couverture globale → quasi 100 %	Une planification ciblée des nouvelles bornes permettrait de renforcer l
+
+📎 Le diagramme complet des relations (ERD) est disponible dans ![Carte des bornes fontaines](./docs/summary.png)
 
 
 
