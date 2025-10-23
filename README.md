@@ -94,29 +94,9 @@ Corréler la densité de bornes avec les nouveaux permis de construction pour un
 Collaborer avec les services d’urgence afin de valider les distances critiques et les temps de réponse réels.
 
 ## ⚙️ 7. Tech Stack
-Layer	Tools / Libraries	Purpose
-ETL	Python, Pandas	Extraction et transformation des données
-Spatial Database	PostgreSQL + PostGIS	Calculs spatiaux (ST_DWithin, ST_Distance), index GIST
-Analytics	GeoPandas, Shapely	Classification et analyse géographique
-Visualization	Looker Studio	Tableaux de bord et cartes interactives
-Versioning & Hosting	GitHub	Documentation, reproductibilité, et collaboration
+Pandas – Data wrangling and ETL
+PostgreSQL / pgAdmin – Data warehouse, spatial analysis (ST_DWithin, ST_Distance)
+Looker Studio – Visualisation
 
-## ⚠️ 8. Caveats & Assumptions
 
-Les distances sont géodésiques (en ligne droite), sans pondération par le réseau routier.
 
-Les coordonnées sont issues de données publiques, sujettes à mise à jour.
-
-Les seuils de couverture (50 m / 100 m) reposent sur des références standard de sécurité incendie.
-
-Le projet n’est pas affilié à la Ville de Gatineau, mais se base sur ses données ouvertes.
-
-## 📚 9. Summary
-
-Ce projet démontre comment les données géospatiales peuvent aider à renforcer la planification urbaine et la sécurité publique.
-En combinant les bornes d’incendie, les adresses résidentielles et les infrastructures publiques, il met en évidence les zones bien desservies et celles nécessitant des interventions ciblées.
-Les résultats peuvent guider les décideurs municipaux dans l’allocation de ressources, la planification des nouvelles installations et l’amélioration des temps de réponse d’urgence.
-
-💡 Le diagramme ERD et les visualisations interactives sont disponibles dans /assets
-.
-📍 Sources : Données ouvertes — Ville de Gatineau.
