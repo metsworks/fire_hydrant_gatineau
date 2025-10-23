@@ -1,78 +1,126 @@
-## Project Background
-Un soir d’été, un incendie dévastateur a frappé le secteur de Masson-Angers, à Gatineau.
-Trois maisons ont été réduites en cendres. Une communauté choquée. Et une question essentielle :
+🔥 Fire Hydrant Coverage Analysis — Gatineau, Québec
 
-Sommes-nous vraiment prêts à répondre efficacement quand chaque seconde compte ?
+A geospatial data analysis project assessing fire hydrant accessibility across Gatineau’s residential areas to improve emergency response and urban safety planning.
 
-Cet événement m’a poussé à réfléchir au rôle crucial de nos bornes d’incendie dans la chaîne de réponse d’urgence.
-Au-delà de la simple présence d’une borne, la proximité réelle des infrastructures de sécurité — casernes de pompiers, postes de police, hôpitaux — influence directement la rapidité d’intervention et donc, la capacité à sauver des vies.
-
-Je me suis alors posé plusieurs questions :
-
-Les bornes d’incendie sont-elles idéalement réparties autour des immeubles résidentiels et des lieux publics sensibles (écoles, centres communautaires, résidences pour aînés) ?
-
-Certaines zones urbaines en pleine croissance immobilière ne sont-elles pas sous-desservies ?
-
-Les services d’urgence les plus proches — pompiers, police, hôpitaux — peuvent-ils accéder rapidement aux zones à risque ?
-
-Pour y répondre, j’ai conçu un projet d’analyse géospatiale basé sur les données ouvertes de la Ville de Gatineau.
-Ce travail vise à cartographier et mesurer la couverture des bornes d’incendie en relation avec :
-
-les immeubles résidentiels 
-la distance réelle aux services d’urgence,
-
-
-L’objectif est double :
-
-- Identifier les immeubles vulnérables, où le maillage de bornes ou la proximité des secours pourrait être optimisé 
-
-- Montrer comment les données ouvertes et l’intelligence géospatiale peuvent servir la sécurité urbaine, soutenir les décisions publiques et renforcer la prévention citoyenne.
-
-Les principaux insights et recommandations issus de l’analyse sont documentés dans le dossier /insights
- du repository.
-On y retrouve une synthèse claire des résultats, des pistes d’amélioration et des suggestions pour une meilleure planification territoriale.
-
-
-
-
-
-## 🌍 Overview
-
-Ce projet se concentre sur l’analyse géospatiale des bornes d’incendie à Gatineau, en relation directe avec les adresses d’immeubles résidentiels.
-L’objectif principal est d’évaluer la proximité réelle entre chaque bâtiment et la borne d’incendie la plus proche, afin de mesurer la qualité de couverture du réseau de bornes à travers la ville.
-
-Les distances ont été catégorisées en trois niveaux :
-
-🟢 Bonne couverture : moins de 50 mètres
-
-🟡 Couverture moyenne : entre 50 et 100 mètres
-
-🔴 Faible couverture : au-delà de 100 mètres
-
-Cette approche permet d’identifier les zones potentiellement sous-desservies, notamment dans les quartiers résidentiels en expansion, et d’apporter des informations utiles aux services d’urgence (pompiers, police, hôpitaux) ainsi qu’à la planification urbaine.
-
-L’ensemble du traitement et de la visualisation a été réalisé avec Python et les bibliothèques GeoPandas, Shapely et Folium pour la cartographie interactive.
-Les insights et recommandations sont disponibles dans le dossier /insights
-.
-
-## 🗺️ Data Structure
-
-La structure des données et leurs relations sont représentées ci-dessous :
-
-![Data Model](./assets/data_model.png)
-
-SQL schema ![Data Model](./assets/data_model.png)
-
-
-## Summary
 📊 Overview of Findings
 
-L’analyse géospatiale des bornes d’incendie à Gatineau révèle que 65.27 % des immeubles résidentiels bénéficient d’une bonne couverture, contre 30.87 % à couverture moyenne, 1.35 % à couverture faible, et 2.52 % sans borne à proximité. Le secteur de Hull se distingue par la meilleure performance (71.74 % d’adresses bien couvertes) et seulement 0.20 % à faible couverture, tandis que Masson-Angers et Aylmer affichent respectivement 64.76 % et 62.74 %. En moyenne, les immeubles bien couverts se trouvent à 32.26 m d’une borne, contre 62.14 m pour ceux en couverture moyenne. Ces résultats soulignent une bonne performance globale, mais mettent en évidence des zones ciblées d’amélioration pour atteindre une couverture quasi complète sur l’ensemble du territoire.
+L’analyse géospatiale des bornes d’incendie à Gatineau révèle que 65.27 % des immeubles résidentiels bénéficient d’une bonne couverture, contre 30.87 % à couverture moyenne, 1.35 % à couverture faible, et 2.52 % sans borne à proximité.
+Le secteur de Hull affiche la meilleure performance (71.74 % d’adresses bien couvertes) et seulement 0.20 % à faible couverture, tandis que Masson-Angers et Aylmer présentent respectivement 64.76 % et 62.74 %.
+Les immeubles bien couverts se situent en moyenne à 32.26 m d’une borne, contre 62.14 m pour ceux à couverture moyenne — une performance solide, mais avec des zones ciblées d’amélioration identifiées pour renforcer la résilience urbaine.
 
-https://lookerstudio.google.com/reporting/761f92ad-2a7b-40ce-bcb8-b43b9fccbbba
+## 🧭 1. Project Background
 
+Cet été, un incendie particulièrement ravageur s’est déclaré à la limite de Masson-Angers, emportant plusieurs résidences.
+Cet événement a soulevé une question essentielle : la répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
 
-## Recommandation
+Ce projet vise à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
 
+mesurer la proximité réelle entre bâtiments et bornes,
 
+identifier les zones sous-desservies,
 
+et fournir des recommandations opérationnelles fondées sur les données ouvertes de la Ville de Gatineau.
+
+## 🌍 2. Overview
+
+Le projet repose sur une analyse géospatiale croisant les adresses d’immeubles résidentiels et les bornes d’incendie pour évaluer la qualité de couverture à travers la ville.
+
+Couverture	Distance à la borne	Statut
+🟢 Bonne couverture	< 50 m	Conforme
+🟡 Couverture moyenne	50–100 m	Acceptable
+🔴 Faible couverture	> 100 m	À améliorer
+⚫ Aucune borne	Aucune dans un rayon de 150 m	Prioritaire
+
+Les résultats détaillés, les visualisations et les insights se trouvent dans le dossier /insights
+.
+
+## 🧩 3. Data Structure
+Données principales
+
+borne → bornes d’incendie (ID, type, coordonnées, secteur administratif)
+Contient la géolocalisation et les métadonnées des bornes (type, propriétaire, étiquette).
+Sert de base pour mesurer la proximité avec les immeubles résidentiels.
+
+adresse_immeuble → adresses d’immeubles résidentiels géolocalisées
+Regroupe les informations civiques et géographiques de chaque immeuble résidentiel de Gatineau.
+Table centrale pour l’analyse de couverture.
+
+coverage_zones → table dérivée du croisement spatial entre borne et adresse_immeuble
+Classifie chaque adresse selon la distance à la borne la plus proche :
+🟢 bonne couverture (< 50 m), 🟡 moyenne (50–100 m), 🔴 faible (> 100 m), ⚫ aucune borne à proximité.
+
+lieu_publique → infrastructures publiques (écoles, hôpitaux, casernes, postes de police)
+Sert à l’analyse de proximité secondaire, mesurant la cohérence urbaine entre habitations et services essentiels.
+
+decoupage_administratif → structure géographique officielle de la Ville de Gatineau
+Définit les secteurs et sous-secteurs (Hull, Aylmer, Masson-Angers, etc.) pour agréger les résultats par zone.
+
+Relations clés
+
+adresse_immeuble ⟷ borne → calcul de distance spatiale via PostGIS (ST_DWithin, ST_Distance) pour déterminer la borne la plus proche.
+
+coverage_zones → table dérivée enrichie d’un indicateur de performance de couverture.
+
+adresse_immeuble ⟷ lieu_publique → relation utilisée pour évaluer la proximité des services d’urgence.
+
+decoupage_administratif → clé géographique commune assurant la cohérence spatiale entre toutes les tables.
+
+📎 Le diagramme complet des relations (ERD) est disponible dans /assets/fire_hydrant_erd.png
+.
+Ce schéma illustre la structure logique du modèle et le flux de données utilisé pour générer les indicateurs de couverture.
+
+## 📈 4. Executive Summary — Key Insights
+Insight	Quantified Value	Business Impact	Story
+Global Coverage	65.27% bonne, 30.87% moyenne, 1.35% faible	Large partie de la ville bien protégée	Gatineau dispose d’un réseau robuste de bornes, mais quelques zones périphériques restent vulnérables.
+Sector Performance	Hull : 71.74% bien couvert	Meilleure performance globale	Hull démontre une planification efficace du réseau d’urgence.
+Coverage Gaps	2.52% sans borne (≈ 2 415 adresses)	Potentiel risque opérationnel	Ces adresses devraient être priorisées pour de nouvelles installations.
+Distance Metrics	32.26 m (bonne) vs 62.14 m (moyenne)	Impact sur le temps de réponse	Les écarts montrent l’effet direct de la distance sur la rapidité d’intervention.
+Access to Services	5.35 km d’une caserne, 7.04 km d’un hôpital	Indicateur de résilience urbaine	Les distances sont acceptables mais peuvent être optimisées dans les zones rurales.
+
+## 🔍 5. Insight Deep Dive
+
+Hull atteint presque une couverture complète, avec moins de 50 adresses critiques au-delà de 100 m.
+
+Masson-Angers présente une couverture correcte, mais une distance plus élevée aux casernes et hôpitaux.
+
+Les zones en expansion urbaine (nouvelles constructions) montrent des retards d’adaptation dans l’installation de bornes.
+
+## 🧠 6. Recommendations
+
+Cibler les adresses à faible couverture pour une installation prioritaire de bornes.
+
+Intégrer la cartographie de couverture aux processus de planification urbaine municipale.
+
+Créer un tableau de bord dynamique (Looker Studio / Databricks) pour suivre les écarts de couverture.
+
+Corréler la densité de bornes avec les nouveaux permis de construction pour une gestion prédictive.
+
+Collaborer avec les services d’urgence afin de valider les distances critiques et les temps de réponse réels.
+
+## ⚙️ 7. Tech Stack
+Layer	Tools / Libraries	Purpose
+ETL	Python, Pandas	Extraction et transformation des données
+Spatial Database	PostgreSQL + PostGIS	Calculs spatiaux (ST_DWithin, ST_Distance), index GIST
+Analytics	GeoPandas, Shapely	Classification et analyse géographique
+Visualization	Looker Studio	Tableaux de bord et cartes interactives
+Versioning & Hosting	GitHub	Documentation, reproductibilité, et collaboration
+
+## ⚠️ 8. Caveats & Assumptions
+
+Les distances sont géodésiques (en ligne droite), sans pondération par le réseau routier.
+
+Les coordonnées sont issues de données publiques, sujettes à mise à jour.
+
+Les seuils de couverture (50 m / 100 m) reposent sur des références standard de sécurité incendie.
+
+Le projet n’est pas affilié à la Ville de Gatineau, mais se base sur ses données ouvertes.
+
+## 📚 9. Summary
+
+Ce projet démontre comment les données géospatiales peuvent aider à renforcer la planification urbaine et la sécurité publique.
+En combinant les bornes d’incendie, les adresses résidentielles et les infrastructures publiques, il met en évidence les zones bien desservies et celles nécessitant des interventions ciblées.
+Les résultats peuvent guider les décideurs municipaux dans l’allocation de ressources, la planification des nouvelles installations et l’amélioration des temps de réponse d’urgence.
+
+💡 Le diagramme ERD et les visualisations interactives sont disponibles dans /assets
+.
+📍 Sources : Données ouvertes — Ville de Gatineau.
