@@ -1,6 +1,6 @@
 ![Image 1](./docs/fontaine.png) 
 
-Fire Hydrant Coverage Analysis — Gatineau, Québec
+# Fire Hydrant Coverage Analysis — Gatineau, Québec
 
 Projet d'analyse de données géospatiales visant à évaluer l'accessibilité des bornes d'incendie dans les zones résidentielles de Gatineau afin d'améliorer les interventions d'urgence et la planification de la sécurité urbaine.
 
