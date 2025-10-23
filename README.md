@@ -1,4 +1,6 @@
-🔥 Fire Hydrant Coverage Analysis — Gatineau, Québec
+![Image 1](./docs/fontaine.png) 
+
+Fire Hydrant Coverage Analysis — Gatineau, Québec
 
 Projet d'analyse de données géospatiales visant à évaluer l'accessibilité des bornes d'incendie dans les zones résidentielles de Gatineau afin d'améliorer les interventions d'urgence et la planification de la sécurité urbaine.
 
@@ -13,7 +15,8 @@ Les immeubles bien couverts se situent en moyenne à 32.26 m d’une borne, cont
 Cet été, un incendie particulièrement ravageur s’est déclaré à la limite de Masson-Angers, emportant 3 maisons.
 Cet événement m'a fait réfléchir et a soulevé une question essentielle : La répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
 
-Ce projet vise à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
+Je me suis penché sur les données ouverte de la ville et entamer un projet d'analyse qui:
+Vise à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
 
 Mesurer la proximité réelle entre bâtiments et bornes,
 
@@ -59,15 +62,15 @@ Ce schéma illustre la structure logique du modèle et le flux de données utili
 
 ## 📈 4. Executive Summary — Key Insights
 
-📊 Executive Summary
+Un exemple de certaines informations clés sont dans ce tableau
 
 
-📎 Le diagramme complet des relations (ERD) est disponible dans ![Executive summary](./docs/summary.png)
+📎 ![Executive summary](./docs/summary.png)
 
 Images du rapport:  ![Image 1](./docs/01.png) ![Image 1](./docs/02.png) 
 
 
-## 🧠 6. Recommendations
+## 🧠 5. Recommendations
 
 Cibler les adresses à faible couverture pour une installation prioritaire de bornes.
 
@@ -109,10 +112,11 @@ ou encore les incidents historiques d’incendie (si disponibles).
 Cela permettrait de mieux relier la couverture technique à la réalité du terrain.
 
 
-## ⚙️ 7. Tech Stack
+## ⚙️ 6. Tech Stack
 Pandas – Data wrangling and ETL (Anaconda, Jupyter Notebook)
 PostgreSQL / pgAdmin – Data warehouse, spatial analysis (ST_DWithin, ST_Distance)
 Looker Studio – Visualisation
+Git, GitHub - Versionning
 
 
 
