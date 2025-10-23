@@ -1,6 +1,6 @@
 🔥 Fire Hydrant Coverage Analysis — Gatineau, Québec
 
-A geospatial data analysis project assessing fire hydrant accessibility across Gatineau’s residential areas to improve emergency response and urban safety planning.
+Projet d'analyse de données géospatiales visant à évaluer l'accessibilité des bornes d'incendie dans les zones résidentielles de Gatineau afin d'améliorer les interventions d'urgence et la planification de la sécurité urbaine.
 
 📊 Overview of Findings
 
@@ -62,25 +62,55 @@ Ce schéma illustre la structure logique du modèle et le flux de données utili
 📊 Executive Summary
 
 
-📎 Le diagramme complet des relations (ERD) est disponible dans ![Carte des bornes fontaines](./docs/summary.png)
+📎 Le diagramme complet des relations (ERD) est disponible dans ![Executive summary](./docs/summary.png)
 
-
+Images du rapport:  ![Image 1](./docs/01.png) ![Image 1](./docs/02.png) 
 
 
 ## 🧠 6. Recommendations
 
 Cibler les adresses à faible couverture pour une installation prioritaire de bornes.
 
-Intégrer la cartographie de couverture aux processus de planification urbaine municipale.
+1. Prioriser les zones à faible couverture pour de nouvelles installations
 
-Créer un tableau de bord dynamique (Looker Studio / Databricks) pour suivre les écarts de couverture.
+Justification : 40 adresses à Hull présentent une faible couverture (0,20 % du total).
 
-Corréler la densité de bornes avec les nouveaux permis de construction pour une gestion prédictive.
+Action : Réaliser une vérification terrain et planifier l’installation de nouvelles bornes ou l’extension du réseau existant.
 
-Collaborer avec les services d’urgence afin de valider les distances critiques et les temps de réponse réels.
+Impact attendu : Améliorer la couverture de Hull jusqu’à près de 100 %, garantissant un accès équitable à l’eau d’incendie pour tous les immeubles.
+
+
+2. Mieux comprendre la relation entre densité et accessibilité
+
+La répartition des bornes semble varier selon les quartiers. Une analyse complémentaire pourrait évaluer dans quelle mesure la densité d’immeubles influence la distance moyenne à une borne.
+Cela permettrait d’orienter les futurs ajustements en fonction de la structure urbaine réelle de Gatineau.
+
+3. Mettre en relation la couverture et la proximité des services d’urgence
+
+Les distances moyennes aux casernes, postes de police et hôpitaux donnent déjà une bonne idée de la capacité de réponse.
+En reliant ces données à la couverture par borne, on pourrait identifier les secteurs cumulant éloignement et faible densité, pour mieux prioriser les interventions.
+
+4. Approfondir l’analyse spatiale par sous-secteur
+
+Les écarts observés entre Hull, Aylmer et Masson-Angers méritent une étude plus fine.
+Segmenter davantage pourrait révéler des micro-zones où la couverture pourrait être renforcée.
+Cela aiderait à bâtir une carte plus granulaire de la performance incendie.
+
+
+5. Intégrer des données contextuelles pour renforcer l’analyse
+
+Pour donner plus de profondeur à l’étude, on pourrait croiser la couverture avec :
+
+les zones à forte densité résidentielle,
+
+les axes routiers majeurs,
+
+ou encore les incidents historiques d’incendie (si disponibles).
+Cela permettrait de mieux relier la couverture technique à la réalité du terrain.
+
 
 ## ⚙️ 7. Tech Stack
-Pandas – Data wrangling and ETL
+Pandas – Data wrangling and ETL (Anaconda, Jupyter Notebook)
 PostgreSQL / pgAdmin – Data warehouse, spatial analysis (ST_DWithin, ST_Distance)
 Looker Studio – Visualisation
 
