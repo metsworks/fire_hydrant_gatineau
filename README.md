@@ -32,7 +32,7 @@ Couverture - Distance à la borne - Statut
 🔴 Faible couverture	> 100 m	À améliorer
 ⚫ Aucune borne: 	Aucune dans un rayon de 150 m	Prioritaire
 
-Pour visualiser le rapport, veillez accéder au dossier dashboard 👉 👉 [Voir le fichier Looker report](./dashboard/looker report.txt)
+Pour visualiser le rapport, veillez accéder au dossier dashboard 👉 👉 [Voir le fichier Looker report](./dashboard/lookerreport.txt)
 
 ## 🧩 3. Data Structure
 Données principales
