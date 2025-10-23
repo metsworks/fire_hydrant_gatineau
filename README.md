@@ -72,3 +72,7 @@ L’analyse géospatiale des bornes d’incendie à Gatineau révèle que 65.27 
 https://lookerstudio.google.com/reporting/761f92ad-2a7b-40ce-bcb8-b43b9fccbbba
 
 
+## Recommandation
+
+
+
