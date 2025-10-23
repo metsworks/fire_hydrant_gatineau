@@ -10,8 +10,8 @@ Les immeubles bien couverts se situent en moyenne à 32.26 m d’une borne, cont
 
 ## 🧭 1. Project Background
 
-Cet été, un incendie particulièrement ravageur s’est déclaré à la limite de Masson-Angers, emportant plusieurs résidences.
-Cet événement m'a fait réfléchir et a soulevé une question essentielle : la répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
+Cet été, un incendie particulièrement ravageur s’est déclaré à la limite de Masson-Angers, emportant 3 maisons.
+Cet événement m'a fait réfléchir et a soulevé une question essentielle : La répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
 
 Ce projet vise à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
 
@@ -27,9 +27,9 @@ Le projet repose sur une analyse géospatiale croisant les adresses d’immeuble
 
 Couverture - Distance à la borne - Statut
 
-🟢 Bonne couverture	 < 50 m	 Conforme
-🟡 Couverture moyenne	50–100 m	Acceptable
-🔴 Faible couverture	> 100 m	À améliorer
+🟢 Bonne couverture	 < 50 m	- Conforme
+🟡 Couverture moyenne	50–100 m - Acceptable
+🔴 Faible couverture	> 100 m -	À améliorer
 ⚫ Aucune borne: 	Aucune dans un rayon de 150 m	Prioritaire
 
 Pour visualiser le rapport, veillez accéder au dossier dashboard 👉  [Voir le fichier](https://github.com/metsworks/fire_hydrant_gatineau/blob/main/dashboard/looker_report.txt)
@@ -37,17 +37,13 @@ Pour visualiser le rapport, veillez accéder au dossier dashboard 👉  [Voir le
 ## 🧩 3. Data Structure
 Données principales
 
-borne → bornes d’incendie (ID, type, coordonnées, secteur administratif)
-Contient la géolocalisation et les métadonnées des bornes (type, propriétaire, étiquette).
+borne → bornes d’incendie 
+Contient la géolocalisation et les métadonnées des bornes (type, propriétaire, étiquette, coordonnées).
 Sert de base pour mesurer la proximité avec les immeubles résidentiels.
 
 adresse_immeuble → adresses d’immeubles résidentiels géolocalisées
 Regroupe les informations civiques et géographiques de chaque immeuble résidentiel de Gatineau.
 Table centrale pour l’analyse de couverture.
-
-coverage_zones → table dérivée du croisement spatial entre borne et adresse_immeuble
-Classifie chaque adresse selon la distance à la borne la plus proche :
-🟢 bonne couverture (< 50 m), 🟡 moyenne (50–100 m), 🔴 faible (> 100 m), ⚫ aucune borne à proximité.
 
 lieu_publique → infrastructures publiques (écoles, hôpitaux, casernes, postes de police)
 Sert à l’analyse de proximité secondaire, mesurant la cohérence urbaine entre habitations et services essentiels.
@@ -55,17 +51,7 @@ Sert à l’analyse de proximité secondaire, mesurant la cohérence urbaine ent
 decoupage_administratif → structure géographique officielle de la Ville de Gatineau
 Définit les secteurs et sous-secteurs (Hull, Aylmer, Masson-Angers, etc.) pour agréger les résultats par zone.
 
-Relations clés
-
-adresse_immeuble ⟷ borne → calcul de distance spatiale via PostGIS (ST_DWithin, ST_Distance) pour déterminer la borne la plus proche.
-
-coverage_zones → table dérivée enrichie d’un indicateur de performance de couverture.
-
-adresse_immeuble ⟷ lieu_publique → relation utilisée pour évaluer la proximité des services d’urgence.
-
-decoupage_administratif → clé géographique commune assurant la cohérence spatiale entre toutes les tables.
-
-📎 Le diagramme complet des relations (ERD) est disponible dans ![Carte des bornes fontaines](./data_structure/erd.png)
+📎 Le diagramme complet des relations (ERD) est disponible dans ![Diagramme ERD](./data_structure/erd.png)
 
 
 .
