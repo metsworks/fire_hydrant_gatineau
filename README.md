@@ -32,8 +32,7 @@ Couverture - Distance à la borne - Statut
 🔴 Faible couverture	> 100 m	À améliorer
 ⚫ Aucune borne: 	Aucune dans un rayon de 150 m	Prioritaire
 
-Les résultats détaillés, les visualisations et les insights se trouvent dans le dossier /insights
-.
+Pour visualiser le rapport, veillez accéder au lien .
 
 ## 🧩 3. Data Structure
 Données principales
