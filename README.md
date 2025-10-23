@@ -65,7 +65,8 @@ adresse_immeuble ⟷ lieu_publique → relation utilisée pour évaluer la proxi
 
 decoupage_administratif → clé géographique commune assurant la cohérence spatiale entre toutes les tables.
 
-📎 Le diagramme complet des relations (ERD) est disponible dans /assets/fire_hydrant_erd.png
+📎 Le diagramme complet des relations (ERD) est disponible dans ![Carte des bornes fontaines](./data structure (ERD)/Entity Relationship Diagram.png)
+
 .
 Ce schéma illustre la structure logique du modèle et le flux de données utilisé pour générer les indicateurs de couverture.
 
