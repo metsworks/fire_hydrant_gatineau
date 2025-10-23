@@ -25,9 +25,9 @@ et fournir des recommandations opérationnelles fondées sur les données ouvert
 
 Le projet repose sur une analyse géospatiale croisant les adresses d’immeubles résidentiels et les bornes d’incendie pour évaluer la qualité de couverture à travers la ville.
 
-### Couverture	         ### Distance à la borne	      ### Statut
+Couverture - Distance à la borne - Statut
 
-🟢 Bonne couverture	 < 50 m	                   Conforme
+🟢 Bonne couverture	 < 50 m	 Conforme
 🟡 Couverture moyenne	50–100 m	Acceptable
 🔴 Faible couverture	> 100 m	À améliorer
 ⚫ Aucune borne: 	Aucune dans un rayon de 150 m	Prioritaire
