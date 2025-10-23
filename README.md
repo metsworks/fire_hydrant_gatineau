@@ -11,13 +11,13 @@ Les immeubles bien couverts se situent en moyenne à 32.26 m d’une borne, cont
 ## 🧭 1. Project Background
 
 Cet été, un incendie particulièrement ravageur s’est déclaré à la limite de Masson-Angers, emportant plusieurs résidences.
-Cet événement a soulevé une question essentielle : la répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
+Cet événement m'a fait réfléchir et a soulevé une question essentielle : la répartition des bornes d’incendie à Gatineau répond-elle efficacement aux besoins réels des pompiers et des citoyens ?
 
 Ce projet vise à explorer la relation spatiale entre les bornes d’incendie, les immeubles résidentiels et les services d’urgence, afin de :
 
-mesurer la proximité réelle entre bâtiments et bornes,
+Mesurer la proximité réelle entre bâtiments et bornes,
 
-identifier les zones sous-desservies,
+Identifier les zones sous-desservies,
 
 et fournir des recommandations opérationnelles fondées sur les données ouvertes de la Ville de Gatineau.
 
@@ -25,11 +25,12 @@ et fournir des recommandations opérationnelles fondées sur les données ouvert
 
 Le projet repose sur une analyse géospatiale croisant les adresses d’immeubles résidentiels et les bornes d’incendie pour évaluer la qualité de couverture à travers la ville.
 
-Couverture	Distance à la borne	Statut
-🟢 Bonne couverture	< 50 m	Conforme
+### Couverture	         ### Distance à la borne	      ### Statut
+
+🟢 Bonne couverture	 < 50 m	                   Conforme
 🟡 Couverture moyenne	50–100 m	Acceptable
 🔴 Faible couverture	> 100 m	À améliorer
-⚫ Aucune borne	Aucune dans un rayon de 150 m	Prioritaire
+⚫ Aucune borne: 	Aucune dans un rayon de 150 m	Prioritaire
 
 Les résultats détaillés, les visualisations et les insights se trouvent dans le dossier /insights
 .
