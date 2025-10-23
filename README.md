@@ -32,7 +32,7 @@ Couverture - Distance à la borne - Statut
 🔴 Faible couverture	> 100 m	À améliorer
 ⚫ Aucune borne: 	Aucune dans un rayon de 150 m	Prioritaire
 
-Pour visualiser le rapport, veillez accéder au dossier dashboard 👉 👉 [Voir le fichier Looker report](./dashboard/lookerreport.txt)
+Pour visualiser le rapport, veillez accéder au dossier dashboard 👉  [](https://github.com/metsworks/fire_hydrant_gatineau/blob/main/dashboard/looker_report.txt)
 
 ## 🧩 3. Data Structure
 Données principales
